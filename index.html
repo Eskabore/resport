@@ -11,50 +11,61 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
+ <!-- FONT Awesome-->
+ <script src="https://kit.fontawesome.com/aef887196f.js" crossorigin="anonymous"></script>
+ <script src="/assets/js/main.js"></script>
+ <script src="/assets/js/swiper-bundle.min.js"></script>
 
     <title>Resport</title>
 </head>
 <body>
-    <header>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <div class="nav container">
-                <Jean-Luc href="" class="nav__logo">Jean-Luc</a>
+                <a href="" class="nav__logo">Jean-Luc</a>
 
-                <div class="nav__menu" id="nav__menu">
+                <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link" id="home">
-                            <i class="fas fa-home"></i>&nbsp;Home
+                        <a href="#home" class="nav__link active-link">
+                            <i class="fas fa-home"></i>Home
                         </a>
+                    </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link" id="">
-                            <i class="fas fa-user"></i>&nbsp;About
+                            <i class="fas fa-user"></i>About
                         </a>
+                        </li>
                     <li class="nav__item">
                         <a href="#skills" class="nav__link" id="">
-                            <i class="fas fa-file-alt"></i>&nbsp;Skills
+                            <i class="fas fa-file-alt"></i>Skills
                         </a>
+                    </li>
                     <li class="nav__item">
                         <a href="#services" class="nav__link" id="">
-                            <i class="fas fa-briefcase"></i>&nbsp;Services
+                            <i class="fas fa-briefcase"></i>Services
                         </a>
+                    </li>
                     <li class="nav__item">
                         <a href="#portfolio" class="nav__link" id="">
-                            <i class="fas fa-image"></i>&nbsp;Portfolio
+                            <i class="fas fa-image"></i>Portfolio
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#contact" class="nav__link" id="">
-                            <i class="fas fa-phone"></i>&nbsp;Contact me
+                            <i class="fas fa-phone"></i>Contact me
                         </a>
                     </li>
                 </ul>
-                <i class="fas fa-times nav__close" id="nav__close"></i>
+                <i class="fas fa-times nav__close" id="nav-close"></i>
+
             </div>
 
             <div class="nav__btns">
-                <div class="nav__toggle" id="nav__toggle">
+
+                <!-- Theme change button -->
+
+                <div class="nav__toggle" id="nav-toggle">
                     <i class="fab fa-window-restore"></i>
                 </div>
             </div>
@@ -78,15 +89,24 @@
                                 <i class="fab fa-gitlab"></i>
                             </a>
                         </div>
-                    </div>
 
-                        <div class="home__img">
-                            <svg class="prefix__home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M140.6 53.9c12
-                                7.9 22 20.6 22.5 33.5.5 12.9-8.3 26-14.9 43.2-6.6 17.2-11 38.5-21.6 42.1-10.5
-                                3.7-27.4-10.3-43.9-19s-32.8-12-44.4-22.7c-11.7-10.6-18.7-28.5-14.8-43.4 3.9-14.9 18.8-26.7
-                                33.4-34.2 14.6-7.5 28.8-10.6 43.1-10.6 14.2 0 28.5 3.2 40.6 11.1z"/>
-                            </svg>
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/jointin-hand.jpg" />
+                            </g>
+                        </svg>
                         </div>
 
                         <div class="home__data">
@@ -99,6 +119,7 @@
                             Contact Me <i class="fas fa-envelope-open button__icon"></i>
                         </a>
                         </div>
+                </div>
 
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-button button--flex">
@@ -108,7 +129,6 @@
                         </a>
                     </div>
                     </div>
-                </div>
             </section>
 
             <!--==================== ABOUT ====================-->
@@ -128,26 +148,28 @@
                         <div class="about__info">
                             <div>
                                 <span class="about__info-title">0888TEST</span>
-                                <span class="abour__info__name">Years <br> Experience</span>
+                                <span class="about__info-name">Years <br> Experience</span>
                             </div>
 
                             <div>
                                 <span class="about__info-title">0888TEST</span>
-                                <span class="abour__info__name">Completed <br> Project</span>
+                                <span class="about__info-name">Completed <br> Project</span>
                             </div>
 
                             <div>
                                 <span class="about__info-title">0888TEST</span>
-                                <span class="abour__info__name">Companies <br> worked</span>
+                                <span class="about__info-name">Companies <br> worked</span>
                             </div>
                         </div>
 
                         <div class="about__buttons">
-                            <a download="" href="/assets/pdf/Salesforce Administrator.pdf" class="button button--flex"></a>
+                            <a download="" href="/assets/pdf/Salesforce Administrator.pdf" class="button button--flex">
                             Download CV<i class="fas fa-download button__icon"></i>
+                        </a>
                         </div>
                     </div>
                 </div>
+            
             </section>
 
             <!--==================== SKILLS ====================-->
@@ -206,8 +228,6 @@
 
         <!--==================== MAIN JS ====================-->
 
-        <!-- FONT Awesome-->
-   <script src="https://kit.fontawesome.com/aef887196f.js" crossorigin="anonymous"></script>
     </header>
 </body>
 </html>
