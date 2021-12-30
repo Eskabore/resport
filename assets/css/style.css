@@ -272,7 +272,6 @@ img {
 /* Change background header */
 .scroll-header {
     box-shadow: 0 -1px 4px rgba(0,0,0, .15);
-    
 }
 
 /*==================== HOME ====================*/
@@ -535,7 +534,7 @@ img {
 }
 
 .skills__close .skills__list {
-    
+
     height: 0;
     overflow: hidden;
 
@@ -551,6 +550,7 @@ img {
     transform: rotate(-180deg);
 }
 /*==================== QUALIFICATION ====================*/
+
 .qualification__tabs {
     display: flex;
     justify-content: space-evenly;
@@ -628,6 +628,7 @@ img {
 
 
 /*==================== SERVICES ====================*/
+
 .services__container {
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
